@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+    <h1 class="logo" id="name-rotato">Ashraf A.</h1>
+        <nav>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="hero" class="hero">
+    <div class="hero-text">
+        <h2 class="namesent">Hi, I'm <span id="namebig" class="logo">Ashraf A.</span> 👋</h2>
+        <p><span id="title-rotator" class="typing-title">Aspiring developer</span> @ VirginiaTech</p>
+
+        <!-- icons now inside hero-text -->
+        <div class="iconslist">
+            <a href="https://www.linkedin.com/in/ashraf-abdou-376ab127a/" target="_blank">
+                <i class="fa-brands fa-linkedin" id="linkedin"></i>
+            </a>
+            <a href="https://github.com/Ab74net" target="_blank">
+                <i class="fa-brands fa-github" id="github"></i>
+            </a>
+            <a href="https://vt.joinhandshake.com/profiles/medwnf" target="_blank">
+                <i class="fa-solid fa-square-h" id="github"></i></a>
+        </div>
+    </div>
+
+    <img src="me.jpg" id="myimg">
+</section>
+
+
+<section id="about-section" class="section">
+    <h2 class="aboutme">About Me</h2>
+
+
+    <p class="abttxt">
+         I'm an aspiring software developer with experience in full-stack web development,
+        backend programming, and systems programming. I enjoy building clean,
+        functional applications and continuously learning new tools and technologies.
+        Dedicated to solving everyday problem using code, and passionate about using software to make change.
+    </p>
+    <!-- Languages Row -->
+    <div class="lang-row">
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-solid fa-c"></i>
+        <i class="fa-solid fa-database"></i>
+    </div>
+
+</section>
+
+
+
+
+<section id="projects" class="projects-section">
+    <h2>My Work</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>LA Wildfire 🔥 Relief Platform </h3>
+            <a href="https://github.com/Ab74net/LAWildFires" target="_blank"><img src="LAwildScreen.png" id="laphoto"></a>
+            <p class="ptexts">Built during the Jan  2025 LA wildfires, with live fire maps, 
+               emergency resources, and a camera-roll “Memory Jogger” for insurance claims.</p>
+            <div class="icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>BMW-Style Hand Recognition ✌️</h3>
+            <a href="https://github.com/Ab74net/BMW_Style_Hand_Recognition" target="_blank"><img src="BMWhands.png" id="laphoto"></a>
+            <p>Hand-tracking system that adjusts volume by detecting clockwise and counterclockwise 
+               hand-circle gestures.</p>
+            <div class="icons">
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Blue Nile Club 👕</h3>
+            <a href="https://news.un.org/en/focus/sudan-conflict" target="_blank"><img src="BNCconcept.png" id="bnc"></a>
+            <p>Coming Soon! A clothing brand site showcasing Sudanese & North African culture, raising funds 
+               for those  affected by the war.</p>
+            <div class="icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+
+    <p>If you’d like to reach out, collaborate, 
+        or just say hello — send me a message below!</p>
+
+    <form class="contact-form" action="mailto:Waston1593@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+
+<script src="script.js"></script>
+<script src="dist/main.js"></script>
+</body>
+</html>

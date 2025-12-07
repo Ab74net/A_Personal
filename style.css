@@ -1,0 +1,397 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+
+body {
+background: rgb(255, 255, 255);
+color: #000000;
+line-height: 1.4;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    background: rgb(20, 11, 8),0; /* fully transparent */
+    color: rgb(253, 232, 212);
+    transition: background 0.4s ease, padding 0.3s;
+    z-index: 1000;
+}
+
+/* Navbar becomes solid when scrolling, via George Conribution*/
+.navbar.scrolled {
+    background: rgba(43, 29, 15, 0.9);
+    padding: 0.7rem 2rem;
+    backdrop-filter: blur(8px);
+}
+
+.navabar:hover 
+{
+    scale: 1.3;
+    transition: 0.2s;
+}
+
+
+.navbar ul 
+{
+display: flex;
+gap: 1rem;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+.navbar a 
+{
+color: rgb(249, 249, 249);
+text-decoration: none;
+font-weight: bold;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar a:hover 
+{
+color: #e7bd87;
+scale: 1.2;
+transition: 0.2s;
+size: large;
+}
+
+#namebig
+{
+  background: linear-gradient(to bottom, transparent 60%, #cc7952 60% 100%,transparent 100%);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.namesent
+{
+  font-size: clamp(24px, 5vw, 48px);
+}
+
+
+.typing-title {
+  position: relative;
+  top: 9.9px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 6px;
+  border-right: 2px solid rgba(255,255,255,0.9); /* cursor */
+  box-sizing: content-box;
+  font-weight: bold;
+  color: beige;
+}
+
+/* cursor blink */
+@keyframes cursor-blink {
+  0%, 100% { border-color: transparent; }
+  50%     { border-color: rgba(255,255,255,0.9); }
+}
+.typing-title {
+  animation: cursor-blink 0.7s steps(2, start) infinite;
+}
+
+
+.iconslist {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.1rem;
+    font-size: 2rem;
+}
+
+
+.iconslit:hover
+{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#linkedin
+{
+  color: rgb(255, 255, 255);
+  size: 0cap;
+}
+#linkedin:hover
+{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#github
+{
+  color: white;
+  size: 0cap;
+}
+
+#github:hover
+{
+  transform: scale(1.1);
+  transition: 0.2s;
+
+}
+
+
+
+.hero {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5rem;
+padding: 4rem 7rem;
+background: linear-gradient(120deg, #713c19, #000000);
+color: rgb(255, 241, 241);
+font-size: 30px;
+padding-right: 15rem;
+}
+
+.hero img#myimg {
+  border: 4px solid rgb(67, 66, 66);
+  width:200px;
+  height:300px
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+/* about section */ 
+
+.about-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: #0d0d0d;
+    color: white;
+}
+
+
+
+.aboutme
+{
+    padding-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.abttxt
+{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Row of icons */
+.lang-row {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+    opacity: 0.95;
+    color: rgb(79, 47, 29);
+    padding-bottom: 65px;
+}
+
+.lang-row i {
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.lang-row i:hover {
+    transform: scale(1.2);
+    color: #ffb15c;
+}
+
+
+/*projects section */
+
+.projects-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(120deg, #713c19, #000000);
+    color: white;
+    text-align: center;
+}
+
+/* ---- TITLE ---- */
+.projects-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+}
+
+#laphoto
+{
+    length: 200px;
+    width: 200px;
+}
+#bnc
+{
+    length: 150px;
+    width: 150px;
+}
+#bnc:hover
+{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 10px;
+    border: 1px solid rgb(119, 117, 117);
+}
+
+#laphoto:hover
+{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 10px;
+    border: 1px solid rgb(119, 117, 117);
+}
+
+/* ---- FLEX WRAPPER (NEW) ---- */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;        /* Wrap on mobile */
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ---- INDIVIDUAL CARD ---- */
+.project-card {
+    background: #000000;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 260px;           /* ⬅️ smaller width */
+    text-align: left;
+    box-shadow: 0 0 12px #000;
+    transition: 0.3s ease;
+}
+
+/* ---- CARD HOVER ---- */
+.project-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 0 20px #333;
+}
+
+/* ---- TEXT ---- */
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(206, 186, 158);
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* ---- ICON ROW ---- */
+.icons {
+    margin-top: 0.8rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+.icons i {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/*contact section */
+
+.contact-section {
+    padding: 2rem 1rem;
+    padding-bottom: 2rem;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 1rem;
+    background: #dfdcdc;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #e4e4e4;
+    transform: translateY(-3px);
+}
+
+
+button {
+padding: 0.7rem 1.2rem;
+border: none;
+border-radius: 5px;
+}
