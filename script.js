@@ -96,3 +96,45 @@ document.addEventListener("DOMContentLoaded", () => {
   el.textContent = "";
   tick();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const resumePreview = document.getElementById("resume-preview");
+  const resumeModal = document.getElementById("resume-modal");
+  const resumeCloseBtn = document.getElementById("resume-close-btn");
+
+  if (!resumePreview || !resumeModal || !resumeCloseBtn) return;
+
+  function openResumeModal() {
+    resumeModal.classList.add("open");
+    resumeModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeResumeModal() {
+    resumeModal.classList.remove("open");
+    resumeModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  resumePreview.addEventListener("click", openResumeModal);
+  resumePreview.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openResumeModal();
+    }
+  });
+
+  resumeCloseBtn.addEventListener("click", closeResumeModal);
+
+  resumeModal.addEventListener("click", (event) => {
+    if (event.target === resumeModal) {
+      closeResumeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && resumeModal.classList.contains("open")) {
+      closeResumeModal();
+    }
+  });
+});
